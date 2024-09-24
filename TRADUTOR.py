@@ -2,7 +2,7 @@
 
 import os
 
-while True:    
+while True: #Tela Inicial com escolha de iniciar ou encerrar o programa
     print("""\n\n ----------------------- TRADUTOR DE CODIGO MORSE -----------------------\n
         Com esse sistema voce poderá traduzir palavras para o Codigo morse e tambem o inverso,
         Para continuar digite "INICIAR" ou se desejar sair do sistema digite "SAIR" \n""")
@@ -21,7 +21,7 @@ while True:
         os.system('cls')
         print("Entrada inválida! Por favor, digite 'iniciar' para começar ou 'sair' para encerrar. \n")
 
-while iniciar == True:
+while iniciar == True: # Tela de escolha do tipo da conversao
     print("""\nQual o tipo de conversão que deseja realizar?
           
     1 - MORSE / PORTUGUES
@@ -29,12 +29,15 @@ while iniciar == True:
     
     choice_convert = input("\nDigite: ")
 
+    start_convert_1 = False
+    start_convert_2 = False
+
     if choice_convert == '1':
-        start_convert = True
+        start_convert_1 = True
         break
         
     elif choice_convert == '2':    
-        start_convert = False            
+        start_convert_2 = True            
         break
     
     else:
