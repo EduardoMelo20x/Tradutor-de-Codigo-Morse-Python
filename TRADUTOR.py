@@ -71,18 +71,18 @@ while loop_tela_inicial == True: #Tela Inicial com escolha de iniciar ou encerra
         os.system('cls')
         print("""\nQual o tipo de tradução que deseja realizar?
             
-        1 - MORSE / PORTUGUES
-        2 - PORTUGUES / MORSE""")
+        1 - PORTUGUES / MORSE
+        2 - MORSE / PORTUGUES""")
         
         choice_convert = input("\nDigite o numero da opção desejada: ")
 
         if choice_convert == '1':
             start_convert_1 = True
-            break
+            
             
         elif choice_convert == '2':    
             start_convert_2 = True            
-            break
+            
         
         else:
             print("\nEntrada inválida! Por favor insira uma das opções apresentadas.")
